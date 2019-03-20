@@ -8,7 +8,7 @@ function GetDeviceFromMAC {
     The MAC list properly formatted and ready-to-use is available here: https://github.com/giuliocomi/random/blob/master/maclist.txt
     
     .EXAMPLE 
-    PS > GetDeviceFromMAC -InputFile .\maclist.txt -MAC DC-08-0F-01-DE-AC
+    PS > GetDeviceFromMAC -InputFile ..\resources\maclist.txt -MAC DC-08-0F-01-DE-AC
     PS > PassiveARP -ResolveMAC | foreach {if($_.InterfaceDetails -ne "") {echo $_}}
      
     .LINK 
